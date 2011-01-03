@@ -200,6 +200,7 @@ if defined?(ActionController)
     helper Vanity::Rails::Helpers
   end
 
+  require 'action_controller/test_case'
   module ActionController
     class TestCase
       alias :setup_controller_request_and_response_without_vanity :setup_controller_request_and_response
